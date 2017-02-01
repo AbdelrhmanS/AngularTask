@@ -6,8 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <meta name="author" content="">
-        <title>Lazy Loading test app</title>
-        <link rel="stylesheet" href="bower_components/bootstrap/css/bootstrap.css">
+        <title>Angular task</title>
+        <link rel="stylesheet" href="bower_components/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="bower_components/datatables.net-dt/css/jquery.dataTables.min.css">
+        <link rel="stylesheet" href="node_modules/angular-datatables/dist/plugins/bootstrap/datatables.bootstrap.min.css">
+
+
     </head>
     <body ng-app="task" cz-shortcut-listen="true">
         <div class="container">
@@ -16,20 +20,26 @@
             </div>
 
             <div class="row">
-                <div class="btn-group col-lg-2" role="group">
+                <div class="btn-group col-lg-2 col-md-4 col-sm-4" role="group">
                     <ul class="list-unstyled">
                         <li><button type="button" class="btn btn-default" ui-sref-active="active" ui-sref="state1">Go to State 1</button></li>
                         <li><button type="button" class="btn btn-default" ui-sref-active="active" ui-sref="state2">Go to State 2</button></li>
+                        <li><button type="button" class="btn btn-default" ui-sref-active="active" ui-sref="state3">Go to State 3</button></li>
                     </ul>
                 </div>
-                <div class="col-lg-10">
+                <div class="col-lg-10 col-md-8 col-sm-8">
                     <ui-view></ui-view> 
                          
                 </div>
                 
             </div>
         </div>
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
         <script src="bower_components/angular/angular.min.js"></script>
+        <script src="node_modules/angular-datatables/dist/angular-datatables.min.js"></script>
+        <script src="node_modules/angular-datatables/dist/plugins/bootstrap/angular-datatables.bootstrap.min.js"></script>
+        <script src="bower_components/angular-resource/angular-resource.min.js"></script>
         <script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
         <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
         <script src="bower_components/oclazyload/dist/ocLazyLoad.min.js"></script>
