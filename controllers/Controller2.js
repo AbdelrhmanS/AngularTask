@@ -36,5 +36,4 @@ angular.module('task').controller("Ctrl2",function(DTOptionsBuilder, DTColumnBui
         DTColumnBuilder.newColumn('firstName').withTitle('First name'),
         DTColumnBuilder.newColumn('lastName').withTitle('Last name')
     ];
-	console.log('Controller1');
 });
