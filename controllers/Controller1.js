@@ -2,11 +2,10 @@
 
 angular.module('task').controller("Ctrl1",
 
-function($resource) {
+function($scope) {
     var vm = this;
-    $resource('http://l-lin.github.io/angular-datatables/archives/data.json').query().$promise.then(function(persons) {
-        vm.persons = persons;
-    });
+    vm.persons = $scope.persons;
 	console.log('Controller1');
+	console.log( vm.persons);
 
 });

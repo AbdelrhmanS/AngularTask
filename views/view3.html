@@ -1,3 +1,17 @@
-<div>
-	<h1>view 3</h1>
+<div ng-controller="Ctrl3 as showCase" class="view3">
+	<h3>Add a new record to added to table in State 1</h3>
+	<form ng-submit="addPerson()" >
+
+        <input class="form-control " type="number" required name="id" placeholder="ID" ng-model="persondata.id" value="" />
+
+        <input type="text" class="form-control" required name="firstName" placeholder="First Name" ng-model="persondata.firstName" value="" /> 
+   
+        <input type="text" class="form-control" required name="lastName" placeholder="Last Name" ng-model="persondata.lastName" value="" />
+
+        <input type="text" class="form-control" required name="country" placeholder="Country" ng-model="persondata.country" value="">
+
+        <input type="number" class="form-control" required name="age" placeholder="Age" ng-model="persondata.age" value="">
+
+   		 <button type="submit" class="btn btn-primary pull-right">Add Person</button>
+	</form>
 </div>

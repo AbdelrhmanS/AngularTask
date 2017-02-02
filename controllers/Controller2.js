@@ -26,7 +26,7 @@ angular.module('task').controller("Ctrl2",function(DTOptionsBuilder, DTColumnBui
             },
             pagination: {
                 classes: {
-                    ul: 'pagination '
+                    ul: 'pagination pagination-sm'
                 }
             }
         });

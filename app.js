@@ -1,10 +1,13 @@
 
 
-var app = angular.module('task', ['ui.router', 'oc.lazyLoad' , 'datatables' ,'ngResource' ,'datatables.bootstrap' ]);
+var app = angular.module('task', ['ui.router', 'oc.lazyLoad' , 'datatables' ,'ngResource' ,'datatables.bootstrap' ,'ngAnimate', 'anim-in-out']);
 app.run(initDT);
 function initDT(DTDefaultOptions) {
-    DTDefaultOptions.setLoadingTemplate('<img src="loading.gif">');
+    DTDefaultOptions.setLoadingTemplate('<img class="center-block" src="loading.gif">');
 }
+app.run(function($rootScope){
+	$rootScope.persons=JSON.parse(localStorage.getItem('items')) || [];
+})
 app.config(['$ocLazyLoadProvider', '$stateProvider', '$urlRouterProvider', 
 	function($ocLazyLoadProvider, $stateProvider, $urlRouterProvider ) {
 	$urlRouterProvider.otherwise("/state1");

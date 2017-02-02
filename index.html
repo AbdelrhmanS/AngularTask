@@ -10,7 +10,9 @@
         <link rel="stylesheet" href="bower_components/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="bower_components/datatables.net-dt/css/jquery.dataTables.min.css">
         <link rel="stylesheet" href="node_modules/angular-datatables/dist/plugins/bootstrap/datatables.bootstrap.min.css">
+        <link rel="stylesheet" href="node_modules/angular-ui-router-anim-in-out/css/anim-in-out.css">
 
+        <link rel="stylesheet" type="text/css" href="css/index_style.css">
 
     </head>
     <body ng-app="task" cz-shortcut-listen="true">
@@ -28,7 +30,7 @@
                     </ul>
                 </div>
                 <div class="col-lg-10 col-md-8 col-sm-8">
-                    <ui-view></ui-view> 
+                   <div  ui-view class="anim-in-out anim-slide-below-fade" data-anim-speed="1000"></div>
                          
                 </div>
                 
@@ -41,9 +43,12 @@
         <script src="node_modules/angular-datatables/dist/plugins/bootstrap/angular-datatables.bootstrap.min.js"></script>
         <script src="bower_components/angular-resource/angular-resource.min.js"></script>
         <script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+        <script src="bower_components/bootstrap/js/bootstrap.min.js"></script>
         <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
         <script src="bower_components/oclazyload/dist/ocLazyLoad.min.js"></script>
-<!--         <script src="bower_components/angular-animate/angular-animate.min.js"></script>-->   
+        <script src="node_modules/angular-animate/angular-animate.min.js"></script> 
+        <script src="node_modules/angular-ui-router-anim-in-out/anim-in-out.js"></script>   
+  
         <script src="app.js"></script>
  
     </body>

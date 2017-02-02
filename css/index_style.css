@@ -1,0 +1,22 @@
+
+.view3 .form-control
+{
+	display: block;
+	margin-bottom: 15px;
+	border: none;
+	outline: none;
+	border-bottom: solid 1px #ccc;
+	border-radius: 0px;
+	box-shadow: none;
+}
+
+.view3{
+	margin: auto;
+	width: 80%;
+}
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
